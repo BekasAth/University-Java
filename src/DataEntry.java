@@ -16,13 +16,14 @@ public class DataEntry {
 		
 		Scanner in = new Scanner(System.in);
 		
-		boolean more = true;
-		boolean coursesMore = true;
-		
 		ArrayList<Student> students = new ArrayList<Student>();
-		ArrayList<Course> courses = new ArrayList<Course>();
+		boolean more = true;
+		
 		
 		while(more) {
+			
+			
+			ArrayList<Course> courses = new ArrayList<Course>();
 			
 			System.out.println("Enter Student's Info:");
 			System.out.println("Name: ");
@@ -42,9 +43,11 @@ public class DataEntry {
 			
 			if(ans == 1) {
 				
-				
+				courses.removeAll(courses);
 
 				System.out.println("Enter the courses:");
+				
+				boolean coursesMore = true;
 			
 				while(coursesMore) {
 				

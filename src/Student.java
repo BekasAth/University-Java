@@ -45,6 +45,11 @@ public class Student {
 		courses = coursesArray;
 	}
 	
+	public void addCourse(Course aCourse) {
+		
+		courses.add(aCourse);
+	}
+	
 		//print student's data
 	
 	public void printInfo() {
